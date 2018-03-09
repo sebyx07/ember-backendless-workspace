@@ -1,0 +1,9 @@
+app:
+  build: ./app
+  entrypoint: []
+  command: ember server
+  volumes:
+    - ./app:/myapp
+  ports:
+    - "4200:4200"
+    - "7020:7020"
